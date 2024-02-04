@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		642BD24F2B6F779500BC2541 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD24E2B6F779500BC2541 /* AppDelegate.swift */; };
+		642BD2512B6F779500BC2541 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2502B6F779500BC2541 /* SceneDelegate.swift */; };
+		642BD2582B6F779600BC2541 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 642BD2572B6F779600BC2541 /* Assets.xcassets */; };
+		642BD25B2B6F779600BC2541 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 642BD2592B6F779600BC2541 /* LaunchScreen.storyboard */; };
+		642BD2662B6F779600BC2541 /* ParkingLotAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2652B6F779600BC2541 /* ParkingLotAppTests.swift */; };
+		642BD2A62B6F7A2500BC2541 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2A42B6F7A2500BC2541 /* AuthenticationViewController.swift */; };
+		642BD2A72B6F7A2500BC2541 /* AuthenticationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 642BD2A52B6F7A2500BC2541 /* AuthenticationViewController.xib */; };
+		642BD2AB2B6F805500BC2541 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2A92B6F805500BC2541 /* OnboardingViewController.swift */; };
+		642BD2AC2B6F805500BC2541 /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 642BD2AA2B6F805500BC2541 /* OnboardingViewController.xib */; };
+		642BD2AE2B6F81C800BC2541 /* AppMainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2AD2B6F81C800BC2541 /* AppMainRouter.swift */; };
+		642BD2B02B6F81F100BC2541 /* AppRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2AF2B6F81F100BC2541 /* AppRoutable.swift */; };
+		642BD2B32B6FABF600BC2541 /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2B12B6FABF600BC2541 /* BookingViewController.swift */; };
+		642BD2B42B6FABF600BC2541 /* BookingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 642BD2B22B6FABF600BC2541 /* BookingViewController.xib */; };
+		642BD2BD2B6FEB8B00BC2541 /* ParkingCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 642BD2BC2B6FEB8B00BC2541 /* ParkingCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		642BD2622B6F779600BC2541 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 642BD2432B6F779500BC2541 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 642BD24A2B6F779500BC2541;
+			remoteInfo = ParkingLotApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		642BD24B2B6F779500BC2541 /* ParkingLotApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkingLotApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		642BD24E2B6F779500BC2541 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		642BD2502B6F779500BC2541 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		642BD2572B6F779600BC2541 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		642BD25A2B6F779600BC2541 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		642BD25C2B6F779600BC2541 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		642BD2612B6F779600BC2541 /* ParkingLotAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParkingLotAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		642BD2652B6F779600BC2541 /* ParkingLotAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingLotAppTests.swift; sourceTree = "<group>"; };
+		642BD26F2B6F779600BC2541 /* ParkingLotAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingLotAppUITests.swift; sourceTree = "<group>"; };
+		642BD2712B6F779600BC2541 /* ParkingLotAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingLotAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		642BD2A42B6F7A2500BC2541 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
+		642BD2A52B6F7A2500BC2541 /* AuthenticationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthenticationViewController.xib; sourceTree = "<group>"; };
+		642BD2A92B6F805500BC2541 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		642BD2AA2B6F805500BC2541 /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
+		642BD2AD2B6F81C800BC2541 /* AppMainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMainRouter.swift; sourceTree = "<group>"; };
+		642BD2AF2B6F81F100BC2541 /* AppRoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoutable.swift; sourceTree = "<group>"; };
+		642BD2B12B6FABF600BC2541 /* BookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
+		642BD2B22B6FABF600BC2541 /* BookingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookingViewController.xib; sourceTree = "<group>"; };
+		642BD2BC2B6FEB8B00BC2541 /* ParkingCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ParkingCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		642BD2482B6F779500BC2541 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				642BD2BD2B6FEB8B00BC2541 /* ParkingCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		642BD25E2B6F779600BC2541 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		642BD2422B6F779500BC2541 = {
+			isa = PBXGroup;
+			children = (
+				642BD24D2B6F779500BC2541 /* ParkingLotApp */,
+				642BD2642B6F779600BC2541 /* ParkingLotAppTests */,
+				642BD26E2B6F779600BC2541 /* ParkingLotAppUITests */,
+				642BD24C2B6F779500BC2541 /* Products */,
+				642BD2BB2B6FEB8B00BC2541 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		642BD24C2B6F779500BC2541 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				642BD24B2B6F779500BC2541 /* ParkingLotApp.app */,
+				642BD2612B6F779600BC2541 /* ParkingLotAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		642BD24D2B6F779500BC2541 /* ParkingLotApp */ = {
+			isa = PBXGroup;
+			children = (
+				642BD2A82B6F803F00BC2541 /* App-Onboarding */,
+				642BD2A32B6F79DC00BC2541 /* App-Authentication */,
+				642BD2A22B6F798600BC2541 /* App-Main */,
+				642BD2572B6F779600BC2541 /* Assets.xcassets */,
+				642BD2592B6F779600BC2541 /* LaunchScreen.storyboard */,
+				642BD25C2B6F779600BC2541 /* Info.plist */,
+				642BD2B12B6FABF600BC2541 /* BookingViewController.swift */,
+				642BD2B22B6FABF600BC2541 /* BookingViewController.xib */,
+			);
+			path = ParkingLotApp;
+			sourceTree = "<group>";
+		};
+		642BD2642B6F779600BC2541 /* ParkingLotAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				642BD2652B6F779600BC2541 /* ParkingLotAppTests.swift */,
+			);
+			path = ParkingLotAppTests;
+			sourceTree = "<group>";
+		};
+		642BD26E2B6F779600BC2541 /* ParkingLotAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				642BD26F2B6F779600BC2541 /* ParkingLotAppUITests.swift */,
+				642BD2712B6F779600BC2541 /* ParkingLotAppUITestsLaunchTests.swift */,
+			);
+			path = ParkingLotAppUITests;
+			sourceTree = "<group>";
+		};
+		642BD2A22B6F798600BC2541 /* App-Main */ = {
+			isa = PBXGroup;
+			children = (
+				642BD2AF2B6F81F100BC2541 /* AppRoutable.swift */,
+				642BD2AD2B6F81C800BC2541 /* AppMainRouter.swift */,
+				642BD24E2B6F779500BC2541 /* AppDelegate.swift */,
+				642BD2502B6F779500BC2541 /* SceneDelegate.swift */,
+			);
+			path = "App-Main";
+			sourceTree = "<group>";
+		};
+		642BD2A32B6F79DC00BC2541 /* App-Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				642BD2A42B6F7A2500BC2541 /* AuthenticationViewController.swift */,
+				642BD2A52B6F7A2500BC2541 /* AuthenticationViewController.xib */,
+			);
+			path = "App-Authentication";
+			sourceTree = "<group>";
+		};
+		642BD2A82B6F803F00BC2541 /* App-Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				642BD2A92B6F805500BC2541 /* OnboardingViewController.swift */,
+				642BD2AA2B6F805500BC2541 /* OnboardingViewController.xib */,
+			);
+			path = "App-Onboarding";
+			sourceTree = "<group>";
+		};
+		642BD2BB2B6FEB8B00BC2541 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				642BD2BC2B6FEB8B00BC2541 /* ParkingCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		642BD24A2B6F779500BC2541 /* ParkingLotApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 642BD2752B6F779600BC2541 /* Build configuration list for PBXNativeTarget "ParkingLotApp" */;
+			buildPhases = (
+				642BD2472B6F779500BC2541 /* Sources */,
+				642BD2482B6F779500BC2541 /* Frameworks */,
+				642BD2492B6F779500BC2541 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParkingLotApp;
+			productName = ParkingLotApp;
+			productReference = 642BD24B2B6F779500BC2541 /* ParkingLotApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		642BD2602B6F779600BC2541 /* ParkingLotAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 642BD2782B6F779600BC2541 /* Build configuration list for PBXNativeTarget "ParkingLotAppTests" */;
+			buildPhases = (
+				642BD25D2B6F779600BC2541 /* Sources */,
+				642BD25E2B6F779600BC2541 /* Frameworks */,
+				642BD25F2B6F779600BC2541 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				642BD2632B6F779600BC2541 /* PBXTargetDependency */,
+			);
+			name = ParkingLotAppTests;
+			productName = ParkingLotAppTests;
+			productReference = 642BD2612B6F779600BC2541 /* ParkingLotAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		642BD2432B6F779500BC2541 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					642BD24A2B6F779500BC2541 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					642BD2602B6F779600BC2541 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 642BD24A2B6F779500BC2541;
+					};
+				};
+			};
+			buildConfigurationList = 642BD2462B6F779500BC2541 /* Build configuration list for PBXProject "ParkingLotApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 642BD2422B6F779500BC2541;
+			productRefGroup = 642BD24C2B6F779500BC2541 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				642BD24A2B6F779500BC2541 /* ParkingLotApp */,
+				642BD2602B6F779600BC2541 /* ParkingLotAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		642BD2492B6F779500BC2541 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				642BD2A72B6F7A2500BC2541 /* AuthenticationViewController.xib in Resources */,
+				642BD25B2B6F779600BC2541 /* LaunchScreen.storyboard in Resources */,
+				642BD2B42B6FABF600BC2541 /* BookingViewController.xib in Resources */,
+				642BD2582B6F779600BC2541 /* Assets.xcassets in Resources */,
+				642BD2AC2B6F805500BC2541 /* OnboardingViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		642BD25F2B6F779600BC2541 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		642BD2472B6F779500BC2541 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				642BD24F2B6F779500BC2541 /* AppDelegate.swift in Sources */,
+				642BD2A62B6F7A2500BC2541 /* AuthenticationViewController.swift in Sources */,
+				642BD2512B6F779500BC2541 /* SceneDelegate.swift in Sources */,
+				642BD2AB2B6F805500BC2541 /* OnboardingViewController.swift in Sources */,
+				642BD2AE2B6F81C800BC2541 /* AppMainRouter.swift in Sources */,
+				642BD2B32B6FABF600BC2541 /* BookingViewController.swift in Sources */,
+				642BD2B02B6F81F100BC2541 /* AppRoutable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		642BD25D2B6F779600BC2541 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				642BD2662B6F779600BC2541 /* ParkingLotAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		642BD2632B6F779600BC2541 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 642BD24A2B6F779500BC2541 /* ParkingLotApp */;
+			targetProxy = 642BD2622B6F779600BC2541 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		642BD2592B6F779600BC2541 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				642BD25A2B6F779600BC2541 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		642BD2732B6F779600BC2541 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		642BD2742B6F779600BC2541 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		642BD2762B6F779600BC2541 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ParkingLotApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ronak.ParkingLotApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		642BD2772B6F779600BC2541 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ParkingLotApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ronak.ParkingLotApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		642BD2792B6F779600BC2541 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ronak.ParkingLotAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParkingLotApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ParkingLotApp";
+			};
+			name = Debug;
+		};
+		642BD27A2B6F779600BC2541 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ronak.ParkingLotAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParkingLotApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ParkingLotApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		642BD2462B6F779500BC2541 /* Build configuration list for PBXProject "ParkingLotApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				642BD2732B6F779600BC2541 /* Debug */,
+				642BD2742B6F779600BC2541 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		642BD2752B6F779600BC2541 /* Build configuration list for PBXNativeTarget "ParkingLotApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				642BD2762B6F779600BC2541 /* Debug */,
+				642BD2772B6F779600BC2541 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		642BD2782B6F779600BC2541 /* Build configuration list for PBXNativeTarget "ParkingLotAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				642BD2792B6F779600BC2541 /* Debug */,
+				642BD27A2B6F779600BC2541 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 642BD2432B6F779500BC2541 /* Project object */;
+}
