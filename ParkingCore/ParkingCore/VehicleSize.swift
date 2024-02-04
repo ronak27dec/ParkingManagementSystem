@@ -1,5 +1,5 @@
 //
-//  ParkingSlotSize.swift
+//  VehicleSize.swift
 //  ParkingCore
 //
 //  Created by Ronak Malick on 04/02/24.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum ParkingSlotSize {
+public enum VehicleSize {
     case small
     case medium
     case large
