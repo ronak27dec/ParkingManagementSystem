@@ -24,6 +24,11 @@
 		642BD2CC2B715B3800BC2541 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2CB2B715B3800BC2541 /* OnboardingViewModel.swift */; };
 		642BD2CF2B715D8200BC2541 /* BookingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2CE2B715D8200BC2541 /* BookingViewModel.swift */; };
 		642BD2D12B7162FC00BC2541 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2D02B7162FC00BC2541 /* AuthViewModel.swift */; };
+		642BD2D32B7166F600BC2541 /* AppMainRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2D22B7166F600BC2541 /* AppMainRouterTest.swift */; };
+		642BD2D52B71682400BC2541 /* AuthViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2D42B71682400BC2541 /* AuthViewModelTest.swift */; };
+		642BD2D72B71684100BC2541 /* MockParkingLotService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2D62B71684100BC2541 /* MockParkingLotService.swift */; };
+		642BD2D92B7169DF00BC2541 /* OnboardingViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2D82B7169DF00BC2541 /* OnboardingViewModelTest.swift */; };
+		642BD2DB2B716A2D00BC2541 /* BookingViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2DA2B716A2D00BC2541 /* BookingViewModelTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +64,11 @@
 		642BD2CB2B715B3800BC2541 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		642BD2CE2B715D8200BC2541 /* BookingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewModel.swift; sourceTree = "<group>"; };
 		642BD2D02B7162FC00BC2541 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		642BD2D22B7166F600BC2541 /* AppMainRouterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMainRouterTest.swift; sourceTree = "<group>"; };
+		642BD2D42B71682400BC2541 /* AuthViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModelTest.swift; sourceTree = "<group>"; };
+		642BD2D62B71684100BC2541 /* MockParkingLotService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockParkingLotService.swift; sourceTree = "<group>"; };
+		642BD2D82B7169DF00BC2541 /* OnboardingViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModelTest.swift; sourceTree = "<group>"; };
+		642BD2DA2B716A2D00BC2541 /* BookingViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewModelTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +128,11 @@
 			isa = PBXGroup;
 			children = (
 				642BD2652B6F779600BC2541 /* ParkingLotAppTests.swift */,
+				642BD2D22B7166F600BC2541 /* AppMainRouterTest.swift */,
+				642BD2D42B71682400BC2541 /* AuthViewModelTest.swift */,
+				642BD2D62B71684100BC2541 /* MockParkingLotService.swift */,
+				642BD2D82B7169DF00BC2541 /* OnboardingViewModelTest.swift */,
+				642BD2DA2B716A2D00BC2541 /* BookingViewModelTest.swift */,
 			);
 			path = ParkingLotAppTests;
 			sourceTree = "<group>";
@@ -300,7 +315,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				642BD2D72B71684100BC2541 /* MockParkingLotService.swift in Sources */,
+				642BD2D52B71682400BC2541 /* AuthViewModelTest.swift in Sources */,
+				642BD2D92B7169DF00BC2541 /* OnboardingViewModelTest.swift in Sources */,
 				642BD2662B6F779600BC2541 /* ParkingLotAppTests.swift in Sources */,
+				642BD2DB2B716A2D00BC2541 /* BookingViewModelTest.swift in Sources */,
+				642BD2D32B7166F600BC2541 /* AppMainRouterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
