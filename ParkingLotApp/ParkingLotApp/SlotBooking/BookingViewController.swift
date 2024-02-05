@@ -13,14 +13,17 @@ class BookingViewController: UIViewController {
     @IBOutlet weak var bayIdTextField: UITextField!
     
     private var selectedVehicleType = VehicleType.small
-    private let service: ParkingLotServiceProtocol
+    private var allocationService: AllocationServiceProtocol
+    private var deallocationService: FreeUpSlotServiceProtocol
     
     private lazy var vm: BookingViewModel = {
-        BookingViewModel(service: service)
+        BookingViewModel(allocationService: allocationService, deallocationService: deallocationService)
     }()
     
-    init(service: ParkingLotServiceProtocol) {
-        self.service = service
+    init(allocationService: AllocationServiceProtocol,
+         deallocationService: FreeUpSlotServiceProtocol) {
+        self.allocationService = allocationService
+        self.deallocationService = deallocationService
         super.init(nibName: "BookingViewController", bundle: .main)
     }
     
@@ -50,7 +53,7 @@ class BookingViewController: UIViewController {
             print("Slots freed with bay id \(bayId)")
         }
     }
-
+    
     @IBAction func smallButtonClicked(_ sender: UIButton) {
         selectedVehicleType = .small
     }

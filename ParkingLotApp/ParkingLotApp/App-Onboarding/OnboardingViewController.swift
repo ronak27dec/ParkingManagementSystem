@@ -9,7 +9,9 @@ import UIKit
 import ParkingCore
 
 class OnboardingViewController: UIViewController {
-    let service: ParkingLotServiceProtocol
+    private let service: ParkingLotServiceProtocol
+    private let allocationService: AllocationServiceProtocol
+    private let deallocationService: FreeUpSlotServiceProtocol
     
     private lazy var vm: OnboardingViewModel = {
         return OnboardingViewModel(service: service)
@@ -21,8 +23,12 @@ class OnboardingViewController: UIViewController {
     @IBOutlet weak var largeCountLabel: UITextField!
     @IBOutlet weak var xlCountLabel: UITextField!
     
-    init(service: ParkingLotServiceProtocol) {
+    init(service: ParkingLotServiceProtocol,
+         allocationService: AllocationServiceProtocol,
+         deallocationService: FreeUpSlotServiceProtocol) {
         self.service = service
+        self.allocationService = allocationService
+        self.deallocationService = deallocationService
         super.init(nibName: "OnboardingViewController", bundle: .main)
     }
     
@@ -48,7 +54,7 @@ class OnboardingViewController: UIViewController {
                            medium: med ?? 100,
                            large: large ?? 100,
                            xL: xl ?? 100) { val in
-            let vc = BookingViewController(service: service)
+            let vc = BookingViewController(allocationService: allocationService, deallocationService: deallocationService)
             navigationController?.pushViewController(vc, animated: true)
         }
     }

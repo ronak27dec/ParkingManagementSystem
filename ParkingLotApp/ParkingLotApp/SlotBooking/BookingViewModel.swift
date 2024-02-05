@@ -9,15 +9,18 @@ import Foundation
 import ParkingCore
 
 class BookingViewModel {
-    private let service: ParkingLotServiceProtocol
+    private var allocationService: AllocationServiceProtocol
+    private var deallocationService: FreeUpSlotServiceProtocol
     
-    init(service: ParkingLotServiceProtocol) {
-        self.service = service
+    init(allocationService: AllocationServiceProtocol,
+         deallocationService: FreeUpSlotServiceProtocol) {
+        self.allocationService = allocationService
+        self.deallocationService = deallocationService
     }
     
     func getSlotsForVehicleType(_ type: VehicleType,
                                 onCompletion: (String) -> Void) {
-        let slotNumber = service.getSlots(size: type)
+        let slotNumber = allocationService.getSlots(size: type)
         if slotNumber.floorId == 0 && slotNumber.bayId == 0 {
             onCompletion("NO SLOTS FOUND")
         } else {
@@ -28,7 +31,7 @@ class BookingViewModel {
     
     func freeSlotWithBayID(_ bayId: Int,
                            onCompletion: (Bool) -> Void) {
-        service.freeSlots(for: bayId)
+        deallocationService.freeSlots(for: bayId)
         onCompletion(true)
     }
 }

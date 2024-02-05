@@ -17,6 +17,14 @@
 		642BD2C12B7047F500BC2541 /* ParkingLot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2C02B7047F500BC2541 /* ParkingLot.swift */; };
 		642BD2C32B70481B00BC2541 /* Floors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2C22B70481B00BC2541 /* Floors.swift */; };
 		642BD2CA2B712DFF00BC2541 /* ParkingLotServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2C92B712DFF00BC2541 /* ParkingLotServiceTest.swift */; };
+		642BD2DD2B716E7D00BC2541 /* AllocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2DC2B716E7D00BC2541 /* AllocationService.swift */; };
+		642BD2E12B716F2700BC2541 /* AllocationServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2E02B716F2700BC2541 /* AllocationServiceProtocol.swift */; };
+		642BD2E32B716F9300BC2541 /* FreeUpSlotServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2E22B716F9300BC2541 /* FreeUpSlotServiceProtocol.swift */; };
+		642BD2E52B71703800BC2541 /* FreeUpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2E42B71703800BC2541 /* FreeUpService.swift */; };
+		642BD2E72B71717F00BC2541 /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2E62B71717F00BC2541 /* LocalStorage.swift */; };
+		642BD2E92B71722200BC2541 /* Storable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2E82B71722200BC2541 /* Storable.swift */; };
+		642BD2EF2B7180B300BC2541 /* AllocationServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2EE2B7180B300BC2541 /* AllocationServiceTest.swift */; };
+		642BD2F12B71813400BC2541 /* FreeupServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2F02B71813400BC2541 /* FreeupServiceTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +49,14 @@
 		642BD2C02B7047F500BC2541 /* ParkingLot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingLot.swift; sourceTree = "<group>"; };
 		642BD2C22B70481B00BC2541 /* Floors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Floors.swift; sourceTree = "<group>"; };
 		642BD2C92B712DFF00BC2541 /* ParkingLotServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingLotServiceTest.swift; sourceTree = "<group>"; };
+		642BD2DC2B716E7D00BC2541 /* AllocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllocationService.swift; sourceTree = "<group>"; };
+		642BD2E02B716F2700BC2541 /* AllocationServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllocationServiceProtocol.swift; sourceTree = "<group>"; };
+		642BD2E22B716F9300BC2541 /* FreeUpSlotServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeUpSlotServiceProtocol.swift; sourceTree = "<group>"; };
+		642BD2E42B71703800BC2541 /* FreeUpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeUpService.swift; sourceTree = "<group>"; };
+		642BD2E62B71717F00BC2541 /* LocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
+		642BD2E82B71722200BC2541 /* Storable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storable.swift; sourceTree = "<group>"; };
+		642BD2EE2B7180B300BC2541 /* AllocationServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllocationServiceTest.swift; sourceTree = "<group>"; };
+		642BD2F02B71813400BC2541 /* FreeupServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeupServiceTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +106,12 @@
 				642BD2B72B6FB0B100BC2541 /* VehicleType.swift */,
 				642BD2C02B7047F500BC2541 /* ParkingLot.swift */,
 				642BD2C22B70481B00BC2541 /* Floors.swift */,
+				642BD2DC2B716E7D00BC2541 /* AllocationService.swift */,
+				642BD2E42B71703800BC2541 /* FreeUpService.swift */,
+				642BD2E02B716F2700BC2541 /* AllocationServiceProtocol.swift */,
+				642BD2E22B716F9300BC2541 /* FreeUpSlotServiceProtocol.swift */,
+				642BD2E62B71717F00BC2541 /* LocalStorage.swift */,
+				642BD2E82B71722200BC2541 /* Storable.swift */,
 			);
 			path = ParkingCore;
 			sourceTree = "<group>";
@@ -99,6 +121,8 @@
 			children = (
 				642BD2972B6F781800BC2541 /* ParkingCoreTests.swift */,
 				642BD2C92B712DFF00BC2541 /* ParkingLotServiceTest.swift */,
+				642BD2EE2B7180B300BC2541 /* AllocationServiceTest.swift */,
+				642BD2F02B71813400BC2541 /* FreeupServiceTest.swift */,
 			);
 			path = ParkingCoreTests;
 			sourceTree = "<group>";
@@ -213,9 +237,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				642BD28D2B6F781800BC2541 /* ParkingCore.docc in Sources */,
+				642BD2E72B71717F00BC2541 /* LocalStorage.swift in Sources */,
 				642BD2B62B6FB07E00BC2541 /* ParkingLotServiceProtocol.swift in Sources */,
 				642BD2C12B7047F500BC2541 /* ParkingLot.swift in Sources */,
+				642BD2E12B716F2700BC2541 /* AllocationServiceProtocol.swift in Sources */,
+				642BD2E52B71703800BC2541 /* FreeUpService.swift in Sources */,
+				642BD2DD2B716E7D00BC2541 /* AllocationService.swift in Sources */,
+				642BD2E32B716F9300BC2541 /* FreeUpSlotServiceProtocol.swift in Sources */,
 				642BD2BA2B6FB1E600BC2541 /* ParkingLotService.swift in Sources */,
+				642BD2E92B71722200BC2541 /* Storable.swift in Sources */,
 				642BD2C32B70481B00BC2541 /* Floors.swift in Sources */,
 				642BD2B82B6FB0B100BC2541 /* VehicleType.swift in Sources */,
 			);
@@ -226,6 +256,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				642BD2CA2B712DFF00BC2541 /* ParkingLotServiceTest.swift in Sources */,
+				642BD2EF2B7180B300BC2541 /* AllocationServiceTest.swift in Sources */,
+				642BD2F12B71813400BC2541 /* FreeupServiceTest.swift in Sources */,
 				642BD2982B6F781800BC2541 /* ParkingCoreTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

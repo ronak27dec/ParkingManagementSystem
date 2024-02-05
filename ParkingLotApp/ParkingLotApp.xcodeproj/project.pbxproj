@@ -29,6 +29,8 @@
 		642BD2D72B71684100BC2541 /* MockParkingLotService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2D62B71684100BC2541 /* MockParkingLotService.swift */; };
 		642BD2D92B7169DF00BC2541 /* OnboardingViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2D82B7169DF00BC2541 /* OnboardingViewModelTest.swift */; };
 		642BD2DB2B716A2D00BC2541 /* BookingViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2DA2B716A2D00BC2541 /* BookingViewModelTest.swift */; };
+		642BD2EB2B717E4A00BC2541 /* MockAllocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2EA2B717E4A00BC2541 /* MockAllocationService.swift */; };
+		642BD2ED2B717E9600BC2541 /* MockFreeUpSlotService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2EC2B717E9600BC2541 /* MockFreeUpSlotService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		642BD2D62B71684100BC2541 /* MockParkingLotService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockParkingLotService.swift; sourceTree = "<group>"; };
 		642BD2D82B7169DF00BC2541 /* OnboardingViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModelTest.swift; sourceTree = "<group>"; };
 		642BD2DA2B716A2D00BC2541 /* BookingViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewModelTest.swift; sourceTree = "<group>"; };
+		642BD2EA2B717E4A00BC2541 /* MockAllocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAllocationService.swift; sourceTree = "<group>"; };
+		642BD2EC2B717E9600BC2541 /* MockFreeUpSlotService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFreeUpSlotService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,8 @@
 				642BD2D62B71684100BC2541 /* MockParkingLotService.swift */,
 				642BD2D82B7169DF00BC2541 /* OnboardingViewModelTest.swift */,
 				642BD2DA2B716A2D00BC2541 /* BookingViewModelTest.swift */,
+				642BD2EA2B717E4A00BC2541 /* MockAllocationService.swift */,
+				642BD2EC2B717E9600BC2541 /* MockFreeUpSlotService.swift */,
 			);
 			path = ParkingLotAppTests;
 			sourceTree = "<group>";
@@ -317,8 +323,10 @@
 			files = (
 				642BD2D72B71684100BC2541 /* MockParkingLotService.swift in Sources */,
 				642BD2D52B71682400BC2541 /* AuthViewModelTest.swift in Sources */,
+				642BD2ED2B717E9600BC2541 /* MockFreeUpSlotService.swift in Sources */,
 				642BD2D92B7169DF00BC2541 /* OnboardingViewModelTest.swift in Sources */,
 				642BD2662B6F779600BC2541 /* ParkingLotAppTests.swift in Sources */,
+				642BD2EB2B717E4A00BC2541 /* MockAllocationService.swift in Sources */,
 				642BD2DB2B716A2D00BC2541 /* BookingViewModelTest.swift in Sources */,
 				642BD2D32B7166F600BC2541 /* AppMainRouterTest.swift in Sources */,
 			);
