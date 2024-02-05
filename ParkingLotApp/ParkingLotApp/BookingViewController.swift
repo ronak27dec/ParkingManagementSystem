@@ -12,7 +12,7 @@ class BookingViewController: UIViewController {
     @IBOutlet weak var slotNoLabel: UILabel!
     @IBOutlet weak var bayIdTextField: UITextField!
     
-    private var selectedVehicleSize = VehicleSize.small
+    private var selectedVehicleType = VehicleType.small
     private let service: ParkingLotService
     private var slotNumber: (Int, Int) = (0,0)
     
@@ -32,7 +32,7 @@ class BookingViewController: UIViewController {
     }
     
     @IBAction func allocateButtonClicked(_ sender: UIButton) {
-        let slotNumber = service.getSlots(size: selectedVehicleSize)
+        let slotNumber = service.getSlots(size: selectedVehicleType)
         self.slotNumber = slotNumber
         let floorId = slotNumber.floorId
         let bayId = slotNumber.bayId
@@ -46,19 +46,19 @@ class BookingViewController: UIViewController {
     }
     
     @IBAction func smallButtonClicked(_ sender: UIButton) {
-        selectedVehicleSize = .small
+        selectedVehicleType = .small
     }
     
     @IBAction func mediumButtonClicked(_ sender: UIButton) {
-        selectedVehicleSize = .medium
+        selectedVehicleType = .medium
     }
     
     @IBAction func largeButtonClicked(_ sender: UIButton) {
-        selectedVehicleSize = .large
+        selectedVehicleType = .large
     }
     
     @IBAction func xlButtonClicked(_ sender: UIButton) {
-        selectedVehicleSize = .extraLarge
+        selectedVehicleType = .extraLarge
     }
     
 }

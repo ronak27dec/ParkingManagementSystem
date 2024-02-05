@@ -40,7 +40,7 @@ public class ParkingLotService: ParkingLotServiceProtocol {
         update(bayId: bayId, newAvailability: true)
     }
     
-    public func getSlots(size: VehicleSize) -> (floorId: Int, bayId: Int) {
+    public func getSlots(size: VehicleType) -> (floorId: Int, bayId: Int) {
         allocateSpace(for: size)
         return (self.floorId, self.bayId)
     }
@@ -104,12 +104,12 @@ public class ParkingLotService: ParkingLotServiceProtocol {
         }
     }
     
-    private func getAvailableSpaces(for size: VehicleSize) -> [ParkingLot] {
+    private func getAvailableSpaces(for size: VehicleType) -> [ParkingLot] {
         let slots = parkingArray.filter { $0.isAvailable && $0.size == size }
         return slots
     }
     
-    private func allocateSpace(for size: VehicleSize) {
+    private func allocateSpace(for size: VehicleType) {
         switch size {
         case .small: allocateForSmallVehicle()
         case .medium: allocateForMediumVehicle()

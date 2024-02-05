@@ -10,6 +10,6 @@ import Foundation
 struct ParkingLot {
     var bayId: Int
     var floor: Floors
-    var size: VehicleSize
+    var size: VehicleType
     var isAvailable: Bool
 }

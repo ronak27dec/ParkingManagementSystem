@@ -8,7 +8,7 @@
 import Foundation
 
 public protocol ParkingLotServiceProtocol {
-    func getSlots(size: VehicleSize) -> (floorId: Int, bayId: Int)
+    func getSlots(size: VehicleType) -> (floorId: Int, bayId: Int)
     func freeSlots(for bayId: Int)
     func setupParkingLotSpace(floors: Int,
                               small: Int,

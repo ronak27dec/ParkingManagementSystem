@@ -12,7 +12,7 @@
 		642BD2982B6F781800BC2541 /* ParkingCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2972B6F781800BC2541 /* ParkingCoreTests.swift */; };
 		642BD2992B6F781800BC2541 /* ParkingCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 642BD28B2B6F781800BC2541 /* ParkingCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		642BD2B62B6FB07E00BC2541 /* ParkingLotServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2B52B6FB07E00BC2541 /* ParkingLotServiceProtocol.swift */; };
-		642BD2B82B6FB0B100BC2541 /* VehicleSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2B72B6FB0B100BC2541 /* VehicleSize.swift */; };
+		642BD2B82B6FB0B100BC2541 /* VehicleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2B72B6FB0B100BC2541 /* VehicleType.swift */; };
 		642BD2BA2B6FB1E600BC2541 /* ParkingLotService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2B92B6FB1E600BC2541 /* ParkingLotService.swift */; };
 		642BD2C12B7047F500BC2541 /* ParkingLot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2C02B7047F500BC2541 /* ParkingLot.swift */; };
 		642BD2C32B70481B00BC2541 /* Floors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2C22B70481B00BC2541 /* Floors.swift */; };
@@ -35,7 +35,7 @@
 		642BD2922B6F781800BC2541 /* ParkingCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParkingCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		642BD2972B6F781800BC2541 /* ParkingCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingCoreTests.swift; sourceTree = "<group>"; };
 		642BD2B52B6FB07E00BC2541 /* ParkingLotServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingLotServiceProtocol.swift; sourceTree = "<group>"; };
-		642BD2B72B6FB0B100BC2541 /* VehicleSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleSize.swift; sourceTree = "<group>"; };
+		642BD2B72B6FB0B100BC2541 /* VehicleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleType.swift; sourceTree = "<group>"; };
 		642BD2B92B6FB1E600BC2541 /* ParkingLotService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingLotService.swift; sourceTree = "<group>"; };
 		642BD2C02B7047F500BC2541 /* ParkingLot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingLot.swift; sourceTree = "<group>"; };
 		642BD2C22B70481B00BC2541 /* Floors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Floors.swift; sourceTree = "<group>"; };
@@ -84,8 +84,8 @@
 				642BD28B2B6F781800BC2541 /* ParkingCore.h */,
 				642BD28C2B6F781800BC2541 /* ParkingCore.docc */,
 				642BD2B52B6FB07E00BC2541 /* ParkingLotServiceProtocol.swift */,
-				642BD2B72B6FB0B100BC2541 /* VehicleSize.swift */,
 				642BD2B92B6FB1E600BC2541 /* ParkingLotService.swift */,
+				642BD2B72B6FB0B100BC2541 /* VehicleType.swift */,
 				642BD2C02B7047F500BC2541 /* ParkingLot.swift */,
 				642BD2C22B70481B00BC2541 /* Floors.swift */,
 			);
@@ -214,7 +214,7 @@
 				642BD2C12B7047F500BC2541 /* ParkingLot.swift in Sources */,
 				642BD2BA2B6FB1E600BC2541 /* ParkingLotService.swift in Sources */,
 				642BD2C32B70481B00BC2541 /* Floors.swift in Sources */,
-				642BD2B82B6FB0B100BC2541 /* VehicleSize.swift in Sources */,
+				642BD2B82B6FB0B100BC2541 /* VehicleType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
