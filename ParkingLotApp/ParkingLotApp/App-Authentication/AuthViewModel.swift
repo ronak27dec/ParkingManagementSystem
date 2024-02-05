@@ -1,20 +1,20 @@
 //
-//  OnboardingViewModel.swift
+//  AuthViewModel.swift
 //  ParkingLotApp
 //
-//  Created by Ronak Malick on 05/02/24.
+//  Created by Ronak Malick on 06/02/24.
 //
 
 import Foundation
 import ParkingCore
 
-class OnboardingViewModel {
+class AuthViewModel {
     private let service: ParkingLotServiceProtocol
     
     init(service: ParkingLotServiceProtocol) {
         self.service = service
     }
-
+    
     func setupParkingLot(floors: Int,
                          small: Int,
                          medium: Int,

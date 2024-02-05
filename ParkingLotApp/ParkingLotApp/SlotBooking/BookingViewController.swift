@@ -13,13 +13,13 @@ class BookingViewController: UIViewController {
     @IBOutlet weak var bayIdTextField: UITextField!
     
     private var selectedVehicleType = VehicleType.small
-    private let service: ParkingLotService
+    private let service: ParkingLotServiceProtocol
     
     private lazy var vm: BookingViewModel = {
         BookingViewModel(service: service)
     }()
     
-    init(service: ParkingLotService) {
+    init(service: ParkingLotServiceProtocol) {
         self.service = service
         super.init(nibName: "BookingViewController", bundle: .main)
     }

@@ -23,6 +23,7 @@
 		642BD2BD2B6FEB8B00BC2541 /* ParkingCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 642BD2BC2B6FEB8B00BC2541 /* ParkingCore.framework */; };
 		642BD2CC2B715B3800BC2541 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2CB2B715B3800BC2541 /* OnboardingViewModel.swift */; };
 		642BD2CF2B715D8200BC2541 /* BookingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2CE2B715D8200BC2541 /* BookingViewModel.swift */; };
+		642BD2D12B7162FC00BC2541 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2D02B7162FC00BC2541 /* AuthViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		642BD2BC2B6FEB8B00BC2541 /* ParkingCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ParkingCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		642BD2CB2B715B3800BC2541 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		642BD2CE2B715D8200BC2541 /* BookingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewModel.swift; sourceTree = "<group>"; };
+		642BD2D02B7162FC00BC2541 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				642BD2A42B6F7A2500BC2541 /* AuthenticationViewController.swift */,
+				642BD2D02B7162FC00BC2541 /* AuthViewModel.swift */,
 				642BD2A52B6F7A2500BC2541 /* AuthenticationViewController.xib */,
 			);
 			path = "App-Authentication";
@@ -280,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				642BD2D12B7162FC00BC2541 /* AuthViewModel.swift in Sources */,
 				642BD24F2B6F779500BC2541 /* AppDelegate.swift in Sources */,
 				642BD2A62B6F7A2500BC2541 /* AuthenticationViewController.swift in Sources */,
 				642BD2512B6F779500BC2541 /* SceneDelegate.swift in Sources */,
