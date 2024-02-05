@@ -66,10 +66,10 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="[FloorId:BayId]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m0H-ce-fDc">
-                    <rect key="frame" x="16" y="368" width="173" height="117"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="[FloorId:BayId]" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m0H-ce-fDc">
+                    <rect key="frame" x="16" y="343" width="149" height="43"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="24"/>
+                    <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="21"/>
                     <color key="textColor" systemColor="tableCellBlueTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -109,10 +109,10 @@
                         <action selector="largeButtonClicked:" destination="-1" eventType="touchUpInside" id="ICh-FH-mXy"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QlT-il-7Oa">
-                    <rect key="frame" x="197" y="378" width="180" height="109"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QlT-il-7Oa">
+                    <rect key="frame" x="16" y="384" width="361" height="43"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="24"/>
+                    <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="21"/>
                     <color key="textColor" systemColor="tableCellBlueTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>

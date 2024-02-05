@@ -1,5 +1,5 @@
 //
-//  Allocate.swift
+//  ParkingLotService.swift
 //  ParkingCore
 //
 //  Created by Ronak Malick on 04/02/24.
@@ -8,27 +8,27 @@
 import Foundation
 
 public class ParkingLotService: ParkingLotServiceProtocol {
-    private var parkingArray: [ParkingLot] = []
-    private var floorId = 0
-    private var bayId = 0
+    var parkingArray: [ParkingLot] = []
+    var floorId = 0
+    var bayId = 0
     private let maxVehicleType = 4
     
-    private var isSpaceAvailableForSmallVehicle: Bool {
+    private var isSlotAvailableForSmallVehicle: Bool {
         let isAvailable = parkingArray.filter { $0.isAvailable == true && $0.size == .small }
         return isAvailable.count == 0 ? false : true
     }
     
-    private var isSpaceAvailableForMediumVehicle: Bool {
+    private var isSlotAvailableForMediumVehicle: Bool {
         let isAvailable = parkingArray.filter { $0.isAvailable == true && $0.size == .medium }
         return isAvailable.count == 0 ? false : true
     }
     
-    private var isSpaceAvailableForLargeVehicle: Bool {
+    private var isSlotAvailableForLargeVehicle: Bool {
         let isAvailable = parkingArray.filter { $0.isAvailable == true && $0.size == .large }
         return isAvailable.count == 0 ? false : true
     }
     
-    private var isSpaceAvailableForXLVehicle: Bool {
+    private var isSlotAvailableForXLVehicle: Bool {
         let isAvailable = parkingArray.filter { $0.isAvailable == true && $0.size == .extraLarge }
         return isAvailable.count == 0 ? false : true
     }
@@ -46,50 +46,69 @@ public class ParkingLotService: ParkingLotServiceProtocol {
     }
     
     
-    private func allocateForSmallVehicle() {
-        if isSpaceAvailableForSmallVehicle {
+    func allocateForSmallVehicle() {
+        if isSlotAvailableForSmallVehicle {
             let slots = getAvailableSpaces(for: .small)
             update(bayId: slots[0].bayId, newAvailability: false)
-        } else if isSpaceAvailableForMediumVehicle {
+        } else if isSlotAvailableForMediumVehicle {
             let slots = getAvailableSpaces(for: .medium)
             update(bayId: slots[0].bayId, newAvailability: false)
-        } else if isSpaceAvailableForMediumVehicle {
+        } else if isSlotAvailableForLargeVehicle {
             let slots = getAvailableSpaces(for: .large)
             update(bayId: slots[0].bayId, newAvailability: false)
         } else {
             let slots = getAvailableSpaces(for: .extraLarge)
-            update(bayId: slots[0].bayId, newAvailability: false)
+            if slots.count > 0 {
+                update(bayId: slots[0].bayId, newAvailability: false)
+            } else {
+                self.floorId = 0
+                self.bayId = 0
+            }
         }
     }
     
-    private func allocateForMediumVehicle() {
-        if isSpaceAvailableForMediumVehicle {
+    func allocateForMediumVehicle() {
+        if isSlotAvailableForMediumVehicle {
             let slots = getAvailableSpaces(for: .medium)
             update(bayId: slots[0].bayId, newAvailability: false)
-        } else if isSpaceAvailableForMediumVehicle {
+        } else if isSlotAvailableForLargeVehicle {
             let slots = getAvailableSpaces(for: .large)
             update(bayId: slots[0].bayId, newAvailability: false)
         } else {
             let slots = getAvailableSpaces(for: .extraLarge)
-            update(bayId: slots[0].bayId, newAvailability: false)
+            if slots.count > 0 {
+                update(bayId: slots[0].bayId, newAvailability: false)
+            } else {
+                self.floorId = 0
+                self.bayId = 0            }
         }
     }
     
-    private func allocateForLargeVehicle() {
-        if isSpaceAvailableForMediumVehicle {
+    func allocateForLargeVehicle() {
+        if isSlotAvailableForLargeVehicle {
             let slots = getAvailableSpaces(for: .large)
             update(bayId: slots[0].bayId, newAvailability: false)
         } else {
             let slots = getAvailableSpaces(for: .extraLarge)
-            update(bayId: slots[0].bayId, newAvailability: false)
+            if slots.count > 0 {
+                update(bayId: slots[0].bayId, newAvailability: false)
+            } else {
+                self.floorId = 0
+                self.bayId = 0            }
         }
     }
     
-    private func allocateForXLVehicle() {
-        if isSpaceAvailableForXLVehicle {
+    func allocateForXLVehicle() {
+        if isSlotAvailableForXLVehicle {
             let slots = getAvailableSpaces(for: .extraLarge)
-            update(bayId: slots[0].bayId, newAvailability: false)
+            if slots.count > 0 {
+                update(bayId: slots[0].bayId, newAvailability: false)
+            } else {
+                self.floorId = 0
+                self.bayId = 0            }
         } else {
+            self.floorId = 0
+            self.bayId = 0 
             print("No Space Available")
         }
     }
@@ -100,6 +119,7 @@ public class ParkingLotService: ParkingLotServiceProtocol {
             self.bayId = parkingArray[index].bayId
             parkingArray[index].isAvailable = newAvailability
         } else {
+            
             print("Element with Bay ID \(bayId) not found.")
         }
     }
@@ -123,7 +143,7 @@ public class ParkingLotService: ParkingLotServiceProtocol {
                                      medium: Int,
                                      large: Int,
                                      xL: Int) {
-        
+        parkingArray = []
         let maxSize = floors * (small + medium + large + xL)
         
         for id in 1...maxSize {

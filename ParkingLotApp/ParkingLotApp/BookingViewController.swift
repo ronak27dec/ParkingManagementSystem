@@ -36,8 +36,15 @@ class BookingViewController: UIViewController {
         self.slotNumber = slotNumber
         let floorId = slotNumber.floorId
         let bayId = slotNumber.bayId
-        let slotNo = "[" + String(floorId) + ":" + String(bayId) + "]"
-        slotNoLabel.text = slotNo
+        
+        if floorId == 0 && bayId == 0 {
+            slotNoLabel.text = "NO SLOTS FOUND"
+        } else {
+            
+            let slotNo = "[" + String(floorId) + ":" + String(bayId) + "]"
+            slotNoLabel.text = slotNo
+        }
+   
     }
     
     @IBAction func deallocateSpace(_ sender: UIButton) {
