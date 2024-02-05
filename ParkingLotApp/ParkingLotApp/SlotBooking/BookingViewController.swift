@@ -14,7 +14,10 @@ class BookingViewController: UIViewController {
     
     private var selectedVehicleType = VehicleType.small
     private let service: ParkingLotService
-    private var slotNumber: (Int, Int) = (0,0)
+    
+    private lazy var vm: BookingViewModel = {
+        BookingViewModel(service: service)
+    }()
     
     init(service: ParkingLotService) {
         self.service = service
@@ -32,26 +35,22 @@ class BookingViewController: UIViewController {
     }
     
     @IBAction func allocateButtonClicked(_ sender: UIButton) {
-        let slotNumber = service.getSlots(size: selectedVehicleType)
-        self.slotNumber = slotNumber
-        let floorId = slotNumber.floorId
-        let bayId = slotNumber.bayId
-        
-        if floorId == 0 && bayId == 0 {
-            slotNoLabel.text = "NO SLOTS FOUND"
-        } else {
-            
-            let slotNo = "[" + String(floorId) + ":" + String(bayId) + "]"
-            slotNoLabel.text = slotNo
+        vm.getSlotsForVehicleType(selectedVehicleType) { ticket in
+            slotNoLabel.text = ticket
         }
-   
     }
     
     @IBAction func deallocateSpace(_ sender: UIButton) {
-        let bayId = Int(bayIdTextField.text ?? "")
-        service.freeSlots(for: bayId!)
+        guard let idText = bayIdTextField.text,
+              let bayId = Int(idText) else {
+            assertionFailure("Bay Id must be Integer and non empty")
+            return
+        }
+        vm.freeSlotWithBayID(bayId) { val in
+            print("Slots freed with bay id \(bayId)")
+        }
     }
-    
+
     @IBAction func smallButtonClicked(_ sender: UIButton) {
         selectedVehicleType = .small
     }
@@ -67,5 +66,4 @@ class BookingViewController: UIViewController {
     @IBAction func xlButtonClicked(_ sender: UIButton) {
         selectedVehicleType = .extraLarge
     }
-    
 }

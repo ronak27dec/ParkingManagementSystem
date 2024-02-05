@@ -21,6 +21,8 @@
 		642BD2B32B6FABF600BC2541 /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2B12B6FABF600BC2541 /* BookingViewController.swift */; };
 		642BD2B42B6FABF600BC2541 /* BookingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 642BD2B22B6FABF600BC2541 /* BookingViewController.xib */; };
 		642BD2BD2B6FEB8B00BC2541 /* ParkingCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 642BD2BC2B6FEB8B00BC2541 /* ParkingCore.framework */; };
+		642BD2CC2B715B3800BC2541 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2CB2B715B3800BC2541 /* OnboardingViewModel.swift */; };
+		642BD2CF2B715D8200BC2541 /* BookingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BD2CE2B715D8200BC2541 /* BookingViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		642BD2B12B6FABF600BC2541 /* BookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
 		642BD2B22B6FABF600BC2541 /* BookingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookingViewController.xib; sourceTree = "<group>"; };
 		642BD2BC2B6FEB8B00BC2541 /* ParkingCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ParkingCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		642BD2CB2B715B3800BC2541 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		642BD2CE2B715D8200BC2541 /* BookingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,14 +101,13 @@
 		642BD24D2B6F779500BC2541 /* ParkingLotApp */ = {
 			isa = PBXGroup;
 			children = (
+				642BD2CD2B715D5800BC2541 /* SlotBooking */,
 				642BD2A82B6F803F00BC2541 /* App-Onboarding */,
 				642BD2A32B6F79DC00BC2541 /* App-Authentication */,
 				642BD2A22B6F798600BC2541 /* App-Main */,
 				642BD2572B6F779600BC2541 /* Assets.xcassets */,
 				642BD2592B6F779600BC2541 /* LaunchScreen.storyboard */,
 				642BD25C2B6F779600BC2541 /* Info.plist */,
-				642BD2B12B6FABF600BC2541 /* BookingViewController.swift */,
-				642BD2B22B6FABF600BC2541 /* BookingViewController.xib */,
 			);
 			path = ParkingLotApp;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				642BD2A92B6F805500BC2541 /* OnboardingViewController.swift */,
+				642BD2CB2B715B3800BC2541 /* OnboardingViewModel.swift */,
 				642BD2AA2B6F805500BC2541 /* OnboardingViewController.xib */,
 			);
 			path = "App-Onboarding";
@@ -161,6 +165,16 @@
 				642BD2BC2B6FEB8B00BC2541 /* ParkingCore.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		642BD2CD2B715D5800BC2541 /* SlotBooking */ = {
+			isa = PBXGroup;
+			children = (
+				642BD2B12B6FABF600BC2541 /* BookingViewController.swift */,
+				642BD2CE2B715D8200BC2541 /* BookingViewModel.swift */,
+				642BD2B22B6FABF600BC2541 /* BookingViewController.xib */,
+			);
+			path = SlotBooking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,9 +283,11 @@
 				642BD24F2B6F779500BC2541 /* AppDelegate.swift in Sources */,
 				642BD2A62B6F7A2500BC2541 /* AuthenticationViewController.swift in Sources */,
 				642BD2512B6F779500BC2541 /* SceneDelegate.swift in Sources */,
+				642BD2CC2B715B3800BC2541 /* OnboardingViewModel.swift in Sources */,
 				642BD2AB2B6F805500BC2541 /* OnboardingViewController.swift in Sources */,
 				642BD2AE2B6F81C800BC2541 /* AppMainRouter.swift in Sources */,
 				642BD2B32B6FABF600BC2541 /* BookingViewController.swift in Sources */,
+				642BD2CF2B715D8200BC2541 /* BookingViewModel.swift in Sources */,
 				642BD2B02B6F81F100BC2541 /* AppRoutable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
